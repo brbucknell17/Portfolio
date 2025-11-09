@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Menu, X, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+
 export default function Page() {
   const projects = [
     {
@@ -136,4 +139,69 @@ function FauxScene() {
       </div>
     </div>
   );
+}
+export default function ResponsivePortfolio() {
+title="Living Earth Dashboard"
+desc="Interactive environmental trends (CO₂, biodiversity, climate) with actionable insights for creative products."
+href="#"
+/>
+<ProjectCard
+title="Customer Insights Explorer"
+desc="Sales & engagement analytics for Homesteads & Habitats—SQL + Python + dashboards."
+href="#"
+/>
+<ProjectCard
+title="NatureMatch Recommender"
+desc="Content-based ML to recommend diorama themes and eco-friendly materials based on user preferences."
+href="#"
+/>
+</div>
+</section>
+
+
+{/* About & Skills */}
+<section id="about" className="mb-12">
+<h2 className="mb-3 text-2xl font-semibold">About</h2>
+<p className="max-w-3xl text-gray-700">
+I combine data science with humanistic values to create work that’s useful, ethical, and beautiful.
+My background includes analytics, visualization, and hands-on creative building. I love turning messy
+data into clear stories and practical tools.
+</p>
+</section>
+
+
+<section id="skills" className="mb-12">
+<h2 className="mb-3 text-2xl font-semibold">Skills</h2>
+<ul className="grid grid-cols-2 gap-2 text-sm text-gray-700 sm:grid-cols-3 lg:grid-cols-4">
+<li className="rounded-xl border px-3 py-2">Python · Pandas</li>
+<li className="rounded-xl border px-3 py-2">SQL · BigQuery</li>
+<li className="rounded-xl border px-3 py-2">scikit-learn</li>
+<li className="rounded-xl border px-3 py-2">NLP · LLM Apps</li>
+<li className="rounded-xl border px-3 py-2">Data Viz · Plotly</li>
+<li className="rounded-xl border px-3 py-2">Next.js · Tailwind</li>
+<li className="rounded-xl border px-3 py-2">Tableau / Power BI</li>
+<li className="rounded-xl border px-3 py-2">Git · CI/CD</li>
+</ul>
+</section>
+
+
+{/* Contact */}
+<section id="contact" className="mb-4">
+<h2 className="mb-3 text-2xl font-semibold">Get in touch</h2>
+<div className="flex flex-wrap gap-3">
+<a href="mailto:you@example.com" className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-gray-50">
+<Mail className="h-4 w-4" /> you@example.com
+</a>
+<a href="https://github.com/" className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-gray-50">
+<Github className="h-4 w-4" /> GitHub
+</a>
+<a href="https://www.linkedin.com/" className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-gray-50">
+<Linkedin className="h-4 w-4" /> LinkedIn
+</a>
+</div>
+</section>
+</main>
+</div>
+</div>
+);
 }
