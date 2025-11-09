@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <aside className="border-r border-white/10 bg-white/5 backdrop-blur-xl px-4 sm:px-5 py-5 flex flex-col gap-4">
             <div className="flex items-center gap-3">
               
-                  <div className="h-10 w-10 rounded-full ring-2 ring-white/20 overflow-hidden">
+                  <div className="h-20 w-20 rounded-full ring-2 ring-white/20 overflow-hidden">
                         <img
                             src="me.png"
                             alt="Your photo"
